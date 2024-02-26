@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aston_intensiv_2</string>
+    <string name="spinButtonText">Spin</string>
+    <string name="resetButtonText">Reset</string>
+</resources>
