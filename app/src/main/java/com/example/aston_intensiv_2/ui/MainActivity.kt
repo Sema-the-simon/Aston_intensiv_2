@@ -8,8 +8,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import coil.load
 import coil.request.CachePolicy
-import coil.transform.CircleCropTransformation
-import coil.transform.Transformation
 import com.example.aston_intensiv_2.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 

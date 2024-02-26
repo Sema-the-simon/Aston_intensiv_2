@@ -7,7 +7,6 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
-import com.example.aston_intensiv_2.colorOf
 import com.example.aston_intensiv_2.hardCodedData
 
 
@@ -72,7 +71,7 @@ class SpinningWheelView @JvmOverloads constructor(
 
         canvas.rotate(rotation, centerX, centerY)
 
-        colors.forEach { (name, color) ->
+        colors.forEach { (_, color) ->
             canvas.drawArc(
                 oval,
                 startAngle,
