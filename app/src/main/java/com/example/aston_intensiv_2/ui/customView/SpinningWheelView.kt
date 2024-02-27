@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import com.example.aston_intensiv_2.hardCodedData
 
@@ -29,6 +30,13 @@ class SpinningWheelView @JvmOverloads constructor(
     var rotationAngle: Float = 0f
     var isWheelSpinning: Boolean = false
     var text: String = ""
+
+
+    override fun performClick(): Boolean {
+        if (!isWheelSpinning)
+            return super.performClick()
+        return true
+    }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         val widthSize = MeasureSpec.getSize(widthMeasureSpec)

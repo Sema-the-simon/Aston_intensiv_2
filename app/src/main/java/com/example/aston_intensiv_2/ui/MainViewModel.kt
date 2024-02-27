@@ -85,7 +85,6 @@ class MainViewModel : ViewModel() {
         _uiState.update {
             it.copy(
                 text = getNameFromData(index),
-                imgUri = ""
             )
         }
     }
@@ -93,7 +92,6 @@ class MainViewModel : ViewModel() {
     private fun loadImg() {
         _uiState.update {
             it.copy(
-                text = "",
                 imgUri = randomUri()
             )
         }

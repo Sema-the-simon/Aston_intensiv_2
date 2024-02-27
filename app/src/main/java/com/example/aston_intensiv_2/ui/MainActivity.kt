@@ -43,6 +43,9 @@ class MainActivity : AppCompatActivity() {
             resetBtn.setOnClickListener {
                 viewModel.reset(spinningWheel)
             }
+            spinningWheel.setOnClickListener {
+                viewModel.spin()
+            }
         }
     }
 
@@ -53,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             text = state.text
         }
 
+        binding.spinBtn.isEnabled = !state.isWheelSpinning
 
         binding.imgView.apply{
             load(state.imgUri) {
